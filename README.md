@@ -17,4 +17,5 @@ Config File:
   "flowdock_api_token": "abcdefghi123456789abcdefghi",
   "external_user_name": "my_git_status",
   "tags": ["example_tag", "example_tag_2"]
-}```
+}
+```
