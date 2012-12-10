@@ -8,9 +8,9 @@ Use:
 Config File:
 **Rename example-config.json to config.json to use**
 
-flowdock_api_token [required] Used to send chat messages to your flow
-external_user_name [optional, default="git-status"] Displays the chat username
-tags [optional default=["git-status"]] adds the tags to the message
+* flowdock_api_token [required] Used to send chat messages to your flow
+* external_user_name [optional, default="git-status"] Displays the chat username
+* tags [optional default=["git-status"]] adds the tags to the message
 
     {
       "flowdock_api_token": "abcdefghi123456789abcdefghi",
