@@ -12,8 +12,9 @@ Config File:
 * external_user_name [optional, default="git-status"] Displays the chat username
 * tags [optional default=["git-status"]] adds the tags to the message
 
-    {
-      "flowdock_api_token": "abcdefghi123456789abcdefghi",
-      "external_user_name": "my_git_status",
-      "tags": ["example_tag", "example_tag_2"]
-    }
+```javascript
+{
+  "flowdock_api_token": "abcdefghi123456789abcdefghi",
+  "external_user_name": "my_git_status",
+  "tags": ["example_tag", "example_tag_2"]
+}```
