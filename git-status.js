@@ -1,14 +1,23 @@
 var request = require('request');
 var http = require('http');
 var fs = require('fs');
+var args = process.argv;
+var path = args[1];
+var script_path = path.split('\\');
+script_path.pop();
+script_path = script_path.join('/');
 
-var config = fs.readFileSync('config.json');
+var config = fs.readFileSync(script_path + '/config.json');
 config = JSON.parse(config);
 
 var server_status = 'good';
 
 var flowdock_api_token = config.flowdock_api_token;
-setInterval(getServerStatus, 30000);
+
+if (args.indexOf('-once') >= 0)
+  getServerStatus();
+else
+  setInterval(getServerStatus, 30000);
 
 function getServerStatus() {
   console.log('getServerStatus: ' + server_status);
