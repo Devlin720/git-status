@@ -19,3 +19,6 @@ Config File:
   "tags": ["example_tag", "example_tag_2"]
 }
 ```
+
+Output example:<br>
+![Example](http://i.imgur.com/v0soLDY.jpg)
